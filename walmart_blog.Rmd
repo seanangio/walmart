@@ -164,6 +164,7 @@ In the monthly animation, you will notice one especially large flash where a sub
 
 ```{r echo=FALSE}
 library(DT)
+
 datatable(
    walmart %>%
        mutate(rdate = format(rdate, "%b %Y")) %>%
@@ -176,7 +177,6 @@ datatable(
                          list(className = 'dt-head-center', targets = '_all'))
 ))
 ```
-
 
 Did 88 new Walmarts open in July 1981 alone? If we plot Walmart's growth up to this point, and mark these locations in red, we can see that this month would have been a really big month for the company, particularly making inroads east of Arkansas. 
 
